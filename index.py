@@ -26,7 +26,7 @@ with mp_hands.Hands(
         for hand_landmarks in results.multi_hand_landmarks:
             print('hand_landmarks:', hand_landmarks)
             print(
-                f'Index finger tip coordinates: (',
+                'Index finger tip coordinates: (',
                 f'{hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x * image_width}, '
                 f'{hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x * image_height})'
             )
